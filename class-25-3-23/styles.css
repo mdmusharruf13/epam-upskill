@@ -1,0 +1,47 @@
+header{
+    background-color: green;
+    width:100%;
+    padding:20px;
+}
+header>div>h1,h3{
+    font-family: Roboto,sans-serif;
+    margin:auto;
+    width:50%;
+    background-color: white;
+    text-align:center;
+}
+nav>ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.s1{
+    display: flex;
+    text-align: left;
+}
+.s11>img{
+    width:250px;
+    margin:10px;
+}
+section b{
+    font-size: 20px;
+}
+.s22{
+    margin:10px;
+}
+/*@media screen and (min-width:390px){
+    .s1{
+        display: block;
+        text-align: left;
+    }
+    .s11>img{
+        width:250px;
+        
+    }
+    section b{
+        font-size: 20px;
+    }
+    .s22{
+        margin:10px;
+    }
+}*/

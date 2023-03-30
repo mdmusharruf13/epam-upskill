@@ -29,14 +29,32 @@ section b{
 .s22{
     margin:10px;
 }
-/*@media screen and (min-width:390px){
+@media screen and (max-width:800px){
+    header{
+        background-color: lightgreen;
+        width:100%;
+        padding:20px;
+    }
+    header>div>h1,h3{
+        font-family: sans-serif;
+        margin:auto;
+        width:50%;
+        background-color: white;
+        text-align:center;
+    }
+    nav>ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    }
     .s1{
-        display: block;
+        display: flex;
         text-align: left;
+        flex-direction: column;
     }
     .s11>img{
-        width:250px;
-        
+        width:400px;
+        margin:30px;
     }
     section b{
         font-size: 20px;
@@ -44,4 +62,5 @@ section b{
     .s22{
         margin:10px;
     }
-}*/
+}
+

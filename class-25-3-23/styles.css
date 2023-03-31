@@ -29,6 +29,44 @@ section b{
 .s22{
     margin:10px;
 }
+label{
+    cursor: pointer;
+    text-decoration:underline;
+    color:blue;
+}
+label + input {
+    display : none;
+}
+label + input + span{
+    display : none;
+}
+#collapse-check1 + input:checked + #span-one{
+    display : inline;
+}
+#collapse-check2 + input:checked + #span-two{
+    display : inline;
+}
+#collapse-check3 + input:checked + #span-three{
+    display : inline;
+}
+#collapse-check4 + input:checked + #span-four{
+    display : inline;
+}
+
+#collapse-check1 + input:checked {
+    display : none;
+}
+#collapse-check2 + input:checked {
+    display : none;
+}
+#collapse-check3 + input:checked {
+    display : none;
+}
+#collapse-check4 + input:checked {
+    display : none;
+}
+
+
 @media screen and (max-width:800px){
     header{
         background-color: lightgreen;

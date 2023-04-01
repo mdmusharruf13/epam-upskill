@@ -72,7 +72,7 @@ section{
     border-top: none;
 }
 
-@media screen and (max-width:800px){
+@media screen and (min-width:420px){
     header{
         background-color: lightgreen;
         width:100%;
@@ -96,8 +96,13 @@ section{
         flex-direction: column;
     }
     .s11>img{
-        width:400px;
-        margin:30px;
+        width:600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .s11{
+        margin-left: auto;
+        margin-right: auto;
     }
     section b{
         font-size: 20px;

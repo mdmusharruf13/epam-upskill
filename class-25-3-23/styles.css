@@ -65,7 +65,12 @@ label + input + span{
 #collapse-check4 + input:checked {
     display : none;
 }
-
+section{
+    border:1px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
 
 @media screen and (max-width:800px){
     header{
@@ -99,6 +104,12 @@ label + input + span{
     }
     .s22{
         margin:10px;
+    }
+    section{
+        border:1px solid black;
+        border-left: none;
+        border-right: none;
+        border-top: none;
     }
 }
 

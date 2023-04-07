@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var days = [1,2,3,4,5,6,7,8];
+
+            function RentAmount(){
+                
+                for(day in days){
+
+                    if(days[day] >= 7){
+                        total = (days[day]*40)-50;
+                    }
+                    else if(days[day] >= 3 && days[day] < 7){
+                        total = (days[day]*40)-20;
+                    }
+                    else{
+                        total = days[day] * 40;
+                    }
+                    console.log(`for day ${days[day]}, rent amount is $${total}.`);
+                }
+            }
+
+            RentAmount();
+        </script>
+    </head>
+    <body>
+        <h3>Problem Statement : </h3>
+        <p>After a hard quarter in the office you decide to get some rest on a vacation. So you will book a flight for you and your girlfriend and try to leave all the mess behind you. <br>
+
+        You will need a rental car in order for you to get around in your vacation. The manager of the car rental makes you some good offers. <br>
+            
+        Every day you rent the car costs $40. If you rent the car for 7 or more days, you get $50 off your total. Alternatively, if you rent the car for 3 or more days, you get $20 off your total. <br>
+            
+        Write a code that gives out the total amount for different days(d).</p>
+
+        <h3>Code : </h3>
+        <pre>
+            var days = [1,2,3,4,5,6,7,8];
+
+            function RentAmount(){
+                
+                for(day in days){
+                    
+                    if(days[day] &gt&equals; 7){
+                        total = (days[day]*40)-50;
+                    }
+                    else if(days[day] &gt&equals; && days[day] &lt; 7){
+                        total = (days[day]*40)-20;
+                    }
+                    else{
+                        total = days[day] * 40;
+                    }
+                    console.log(`for day ${days[day]}, rent amount is $${total}.`);
+                }
+            }
+
+            RentAmount();
+        </pre>
+        
+        <h3>Output : </h3>
+        <p>check in the console.</p>
+    </body>
+</html>

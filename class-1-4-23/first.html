@@ -3,28 +3,10 @@
     <head>
         <script>
             var arr = ['h','o','l','a'];
+
             function print(){
                 var sum ="";
-                for(var i=0; i<arr.length;i++){
-                    if(i==arr.length-1){
-                        sum += arr[i] ;
-                    }
-                    else{
-                        sum += arr[i] +",";
-                    }
-                }
-                return sum;
-            }
-            var ans = print();
-            console.log("\""+ans+"\"");
-        </script>
-    </head>
-    <body>
-        <pre>
-            var arr = ['h','o','l','a'];
-            function print(){
-                var sum ="";
-                for(var i=0; i &lt arr.length; i++){
+                for(var i=0; i < arr.length; i++){
                     if(i == arr.length-1){
                         sum += arr[i] ;
                     }
@@ -34,8 +16,35 @@
                 }
                 return sum;
             }
+
+            var ans = print();
+            console.log("\""+ans+"\"");
+        </script>
+    </head>
+    <body>
+        <h3>Problem Statement : </h3>
+        <p>Printing Array elements with Comma delimiters.</p>
+        <h3>Code : </h3>
+        <pre>
+            var arr = ['h','o','l','a'];
+            
+            function print(){
+                var sum ="";
+                for(var i=0; i < arr.length; i++){
+                    if(i == arr.length-1){
+                        sum += arr[i] ;
+                    }
+                    else{
+                        sum += arr[i] +",";
+                    }
+                }
+                return sum;
+            }
+
             var ans = print();
             console.log("\""+ans+"\"");
         </pre>
+        <h3>Output : </h3>
+        <p>check in the console.</p>
     </body>
 </html>

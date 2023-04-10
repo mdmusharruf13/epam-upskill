@@ -1,0 +1,12 @@
+section{
+    display:flex;
+}
+section>a{
+    margin:20px;
+    border-width:2px;
+    border-radius:10px;
+    background-color: green;
+    padding:10px;
+    color:white;
+    text-decoration: none;
+}

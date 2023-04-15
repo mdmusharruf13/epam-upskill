@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function getCount(str){
+                let string = str.replaceAll(" ","");
+                const arr = ['a','e','i','o','u','A','E','I','O','U'];
+                let vowel = 0;
+                let consonant = 0;
+                for(let i=0; i<string.length; i++){
+                    if(arr.includes(string.charAt(i))){
+                        vowel++;
+                    }
+                    else{
+                        consonant++
+                    }
+                }
+                console.log(`Number of vowels ${vowel} and consonants are ${consonant} present in the ${str}`);
+            }
+            getCount("Hi am Musharruf");
+        </script>
+    </head>
+    <body>
+        <h3>problem statement : </h3>
+        <p>Write a program finding number of consonants and vowels.</p>
+        <h3>Code : </h3>
+        <pre>
+            function getCount(str){
+                let string = str.replaceAll(" ","");
+                const arr = ['a','e','i','o','u','A','E','I','O','U'];
+                let vowel = 0;
+                let consonant = 0;
+                for(let i=0; i &lt; string.length; i++){
+                    if(arr.includes(string.charAt(i))){
+                        vowel++;
+                    }
+                    else{
+                        consonant++
+                    }
+                }
+                console.log(`Number of vowels ${vowel} and consonants are ${consonant} present in the ${str}`);
+            }
+            getCount("Hi am Musharruf");
+        </pre>
+        <h3>Output : </h3>
+        <p>Check in the console.</p>
+        <b>Note :</b> <span>you can also call this function by passing any string in the console.</span> <br>
+        <b>getCount("any string");</b>
+    </body>
+</html>

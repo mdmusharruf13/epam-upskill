@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reverse a Number</title>
+        <script>
+            function reverseNumber(num){
+                let sum = 0;
+                let tempNumber = num;
+                while(tempNumber > 0){
+                    let rem = tempNumber % 10;
+                    sum = (sum * 10) + rem;
+                    tempNumber = parseInt(tempNumber / 10);
+                }
+                console.log(`The Reverse of ${num} is ${sum}`);
+            }
+            reverseNumber(598);
+        </script>
+    </head>
+    <body>
+        <h3>problem statement : </h3>
+        <p>Write a program to reverse a number.</p>
+        <h3>Code : </h3>
+        <pre>
+            function reverseNumber(num){
+                let sum = 0;
+                let tempNumber = num;
+                while(tempNumber > 0){
+                    let rem = tempNumber % 10;
+                    sum = (sum * 10) + rem;
+                    tempNumber = parseInt(tempNumber / 10);
+                }
+                console.log(`The Reverse of ${num} is ${sum}`);
+            }
+            reverseNumber(598);
+        </pre>
+        <h3>Output : </h3>
+        <p>Check in the console.</p>
+        <b>Note :</b> <span>you can also call this function by passing your choice number in the console.</span> <br>
+        <b>reverseNumber(number of your choice);</b>
+    </body>
+</html>

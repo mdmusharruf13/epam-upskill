@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function checkArmstrong(num){
+                let result = 0;
+                let tmpNumber = num;
+                let power = String(num).length;
+                while(tmpNumber > 0){
+                    let rem = tmpNumber % 10;
+                    result = result + rem**power;
+                    tmpNumber = parseInt(tmpNumber / 10);
+                }
+                if(num == result){
+                    console.log(`It is armstrong number.`);
+                }
+                else{
+                    console.log(`It is not armstrong number.`);
+                }
+            }
+            checkArmstrong(153);
+        </script>
+    </head>
+    <body>
+        <h3>problem statement : </h3>
+        <p>Write a program to check armstrong number.</p>
+        <h3>Code : </h3>
+        <pre>
+            function checkArmstrong(num){
+                let result = 0;
+                let tmpNumber = num;
+                let power = String(num).length;
+                while(tmpNumber > 0){
+                    let rem = tmpNumber % 10;
+                    result = result + rem**power;
+                    tmpNumber = parseInt(tmpNumber / 10);
+                }
+                if(num == result){
+                    console.log(`It is armstrong number.`);
+                }
+                else{
+                    console.log(`It is not armstrong number.`);
+                }
+            }
+            checkArmstrong(153);
+        </pre>
+        <h3>Output : </h3>
+        <p>Check in the console.</p>
+        <b>Note :</b> <span>you can also call this function by passing your choice number in the console.</span> <br>
+        <b>checkArmstrong(number of your choice);</b>
+    </body>
+</html>

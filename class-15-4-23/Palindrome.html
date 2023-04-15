@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function checkPalindrome(str){
+                var flag = true;
+                for(let i=0; i < (str.length)/2; i++){
+                    if(str[i] != str[str.length-1-i]){
+                        flag = false;
+                        break;
+                    }
+                }
+                if(flag){
+                    console.log(`It is a palindrome.`);
+                }
+                else{
+                    console.log(`It is not a palindrome.`);
+                }
+            }
+            checkPalindrome("598");
+        </script>
+    </head>
+    <body>
+        <h3>problem statement : </h3>
+        <p>Write a program to check whether string is palindrome or not.</p>
+        <h3>Code : </h3>
+        <pre>
+            function checkPalindrome(str){
+                var flag = true;
+                for(let i=0; i &lt; (str.length)/2; i++){
+                    if(str[i] != str[str.length-1-i]){
+                        flag = false;
+                        break;
+                    }
+                }
+                if(flag){
+                    console.log(`It is a palindrome.`);
+                }
+                else{
+                    console.log(`It is not a palindrome.`);
+                }
+            }
+            checkPalindrome("598");
+        </pre>
+        <h3>Output : </h3>
+        <p>Check in the console.</p>
+        <b>Note :</b> <span>you can also call this function by passing your choice string in the console.</span> <br>
+        <b>checkPalindrome("any string");</b>
+    </body>
+</html>
